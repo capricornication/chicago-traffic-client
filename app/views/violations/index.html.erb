@@ -1,0 +1,8 @@
+<h1>Chicago Traffic Violations</h1>
+
+<% @violations.each do |violation| %>
+  <h2>Intersection: <%= violation["intersection"] %></h2>
+  <h2>Date: <%= violation["violation_date"] %></h2>
+  <h2>Violation Count: <%= violation["violations"] %></h2>
+  <br>
+<% end %>
